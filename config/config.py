@@ -39,6 +39,7 @@ SECRET_KEY = '你的 Secret Key'
 
 # arknights INFO
 ArkNights_PACKAGE_NAME = "com.hypergryph.arknights"
+# ArkNights_PACKAGE_NAME = "com.hypergryph.arknights.bilibili" # 开启b服
 ArkNights_ACTIVITY_NAME = "com.u8.sdk.U8UnityContext"
 
 # manlike action

@@ -12,9 +12,9 @@ import os
     
     为啥这些路径我都要写绝对路径呢...因为之后会有 os.chdir()的操作，所以建议全部写成绝对路径，就像如下所示：
 '''
-ADB_ROOT = r"D:\Program Files\Nox\bin"
-SCREEN_SHOOT_SAVE_PATH = "D:\\python_box\\shaobao_adb\\screen_shoot\\"
-STORAGE_PATH = "D:\\python_box\\shaobao_adb\\storage\\"
+ADB_ROOT = r"D:\\Program Files\\Nox\\bin\\"
+SCREEN_SHOOT_SAVE_PATH = os.getcwd() + "\\screen_shoot\\"
+STORAGE_PATH = os.getcwd() + "\\storage\\"
 
 # ADB_HOST = "127.0.0.1:62001"  # 如果你不想用多开器的功能，请用此行配置
 ADB_HOST = ""  # 如果你想用多开器的功能，请使用此行配置，并手动选择或在启动时自行添加HOST。
@@ -23,11 +23,11 @@ ADB_HOST = ""  # 如果你想用多开器的功能，请使用此行配置，并
 
 # 注意：以下选项如果要开启的话，请使用前确认已经安装 中文识别 或者 启动百度API
 # 启动ocr来检测关卡后是否升级
-enable_ocr_check_update = True
+enable_ocr_check_update = False
 # 启动ocr来检测关卡是否结束
-enable_ocr_check_end = True
+enable_ocr_check_end = False
 # 启用ocr来DEBUG
-enable_ocr_debugger = True
+enable_ocr_debugger = False
 # 启用ocr输出
 enable_rebase_to_null = True
 # 是否启用百度api作为ocr识别方案，需要自行注册，不启用则使用默认方案

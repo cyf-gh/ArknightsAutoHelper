@@ -1,0 +1,10 @@
+pip install certifi   
+pip install chardet   
+pip install idna      
+pip install Pillow   
+pip install pip     
+pip install requests  
+pip install setuptools
+pip install soupsieve 
+pip install urllib3  
+pip install baidu-aip 

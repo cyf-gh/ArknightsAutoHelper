@@ -1,0 +1,1 @@
+  mCurrentFocus=Window{169ea6b0 u0 com.hypergryph.arknights.bilibili}

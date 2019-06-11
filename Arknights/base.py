@@ -519,7 +519,7 @@ class ArknightsHelper(object):
                         self.CURRENT_STRENGTH -= LIZHI_CONSUME[c_id]
         else:
             self.CURRENT_STRENGTH -= LIZHI_CONSUME[c_id]
-            self.shell_color.warning_text("[*] OCR 模块为装载，系统将直接计算理智值")
+            self.shell_color.warning_text("[*] OCR 模块未装载，系统将直接计算理智值")
             self.__wait(TINY_WAIT)
             self.shell_color.helper_text("[+] 理智剩余 {}".format(self.CURRENT_STRENGTH))
 

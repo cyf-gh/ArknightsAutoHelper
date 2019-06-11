@@ -11,6 +11,7 @@ from Arknights.BattleSelector import BattleSelector
 from Arknights.flags import *
 from Baidu_api import *
 from Arknights.Binarization import binarization_image
+import datetime
 
 os.path.join(os.path.abspath('../'))
 
@@ -319,6 +320,10 @@ class ArknightsHelper(object):
             if count >= set_count:
                 strength_end_signal = True
             self.shell_color.info_text("[-] 战斗结束 重新开始")
+            # 计算完成时间
+            delta_time = ( t + 20 ) * ( set_count - count )
+            finish_time = datetime.datetime.now() + datetime.timedelta(seconds = delta_time)
+            self.shell_color.info_text("[*] 预计于 {} 完成当前所有任务".format(finish_time.strftime('%Y.%m.%d-%H:%M:%S')))
             self.__wait(10, MANLIKE_FLAG=True)
 
         if not sub:
